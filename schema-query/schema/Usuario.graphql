@@ -1,0 +1,22 @@
+enum EUsuarioStatus {
+  ATIVO
+  INATIVO
+  BLOQUEADO
+}
+
+type Usuario {
+  id: Int
+  nome: String!
+  email: String!
+  idade: Int
+  salario: Float
+  vip: Boolean
+  nomeEmail: String
+  perfil: Perfil
+  status: EUsuarioStatus
+}
+
+type Perfil {
+  id: Int!
+  nome: String!
+}

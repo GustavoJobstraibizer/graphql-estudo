@@ -1,0 +1,17 @@
+#import Usuario, Perfil from 'Usuario.graphql'
+#import Produto from 'Produto.graphql'
+
+scalar Date
+
+# Pontos de entrada da API
+type Query {
+  ola: String
+  horaAtual: Date
+  usuarioLogado: Usuario
+  produto: Produto
+  numerosMegaSena: [Int!]!
+  usuarios: [Usuario]
+  usuario(id: Int): Usuario
+  perfis: [Perfil]
+  perfil(id: Int): Perfil
+}
