@@ -1,5 +1,5 @@
-const { usuarios, nextId } = require("../data/db");
-const { indiceUsuario } = require("../utils/utils");
+const { usuarios, nextId } = require("../../data/db");
+const { indiceUsuario } = require("../../utils/utils");
 
 module.exports = {
   // { nome, email, idade }
